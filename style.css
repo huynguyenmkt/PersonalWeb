@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(153, 153, 153) !important;
+}
+.logo{
+    width:100px;
+    height: 100px;
+}
+.tr-header {
+    background: none;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+.menu-items li a{
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0);
+    transition: all 200ms linear;
+}
+.menu-items li a:hover{
+    border: 2px solid rgba(255,255,255,1);
+    color: #9ACFB7 !important;
+}
