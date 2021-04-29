@@ -3,12 +3,12 @@ body{
     background: none !important;
     position: relative;
 }
-.content-holder{
+/* .content-holder{
     position: relative;
     float: left;
     width: 100%;
     height: 100%;
-}
+} */
 .logo{
     width:100px;
     height: 100px;
@@ -42,14 +42,9 @@ body{
     top: 0;
     left: 0;
 }
-.bg{
-    position: absolute;
-    height: 100%;
-    top: -15px;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center;
-}
+/* .bg{
+    background-size: auto;
+} */
 .carousel-caption {
     top: 40%;
     left: 50%;
@@ -79,17 +74,8 @@ body{
 }
 .bg-parallax{
     position: relative;
-}
-.img-about{
-    position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 250px;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: top;
-    background-repeat: no-repeat;
+    height: 100%;
 }
 .overlay{
     position: absolute;
@@ -97,7 +83,14 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 4;
     background: #474040;
     opacity: 0.4;
+}
+.img-parallax{
+    background-image: url(./img/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
 }
