@@ -9,15 +9,18 @@ body{
     width: 100%;
     height: 100%;
 } */
+
 .logo{
     width:100px;
     height: 100px;
+    /* background-color: gray; */
+    border-radius: 50%;
 }
 .tr-header {
     position: fixed;
-    background: none;
+    background: rgba(189, 188, 188,0.3);
     border-bottom: 1px solid rgba(255,255,255,0.4);
-    z-index: 2;
+    z-index: 22;
 }
 .menu-items li a{
     border-radius: 25px;
@@ -35,16 +38,26 @@ body{
 }
 .menu-items li a:hover{
     border: 2px solid rgba(255,255,255,1);
+    background-color: white;
     color: #9ACFB7 !important;
+}
+.navbar-toggler-icon{
+    color: white !important;
 }
 .sec1{
     position: relative;
     top: 0;
     left: 0;
 }
-/* .bg{
-    background-size: auto;
-} */
+.bg{
+    background-size: cover;
+}
+.fa-bars{
+    color: rgba(231, 230, 230,60) !important;
+}
+.navbar-toggler{
+    color: rgba(231, 230, 230,60) !important;
+}
 .carousel-caption {
     top: 40%;
     left: 50%;
@@ -74,6 +87,19 @@ body{
 }
 .bg-parallax{
     position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-content {
+    position: relative;
+    background-image: url(./img/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0;
     width: 100%;
     height: 100%;
 }
@@ -83,14 +109,44 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 4;
     background: #474040;
-    opacity: 0.4;
+    opacity: 0.6;
+    z-index: 1;
 }
-.img-parallax{
-    background-image: url(./img/5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
+.about-content .clf{
+    position: relative;
+}
+.about-content .col-sm-3 i{
+    position: absolute;
+    color: rgba(204, 203, 203,0.6);
+    font-size: 40px;
+    left: 40%;
+    transition: 0.5s;
+}
+.about-content .col-sm-3 h4{
+    position: absolute;
+    color: white;
+    font-size: 44px;
+    top: 25%;
+    left: 35%;
+}
+.about-content .col-sm-3 p{
+    color: #9ACFB7;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 120px;
+}
+.about-content .col-sm-3{
+    border: 1px solid rgba(190, 190, 190,0);
+    border-radius: 10px;
+    z-index: 2;
+}
+.about-content .col-sm-3:hover{
+    border: 1px solid rgba(255, 254, 254, 0.8);
+    cursor: pointer;
+}
+.about-content .col-sm-3:hover .icon-about{
+    font-size: 112px;
+    transform: rotate(20deg);
 }
