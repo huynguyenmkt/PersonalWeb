@@ -72,7 +72,7 @@ body{
     display: inline-block;
     width: 100%;
 }
-.about h3{
+.h3-title{
     font-size: 20px;
     color: #666;
     text-transform: uppercase;
@@ -80,7 +80,7 @@ body{
     text-align: left;
     padding: 10px 0px;
 }
-.about p{
+.paragraph{
     color: #666;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -149,4 +149,17 @@ body{
 .about-content .col-sm-3:hover .icon-about{
     font-size: 112px;
     transform: rotate(20deg);
+}
+.works{
+    padding-top: 5rem;
+}
+.works .sec3-img{
+    width: 100%;
+    height: 100%;
+}
+.works .sec3-picture{
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
