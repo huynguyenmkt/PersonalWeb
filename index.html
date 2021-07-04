@@ -12,17 +12,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="main">
     <div class="content-holder">
-      <header class="tr-header w-100"> 
+      <header class="tr-header w-100" id="header"> 
+        
           <div class="menu-items ">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
               <div class="container-fluid">
                 <div class="navbar-brand logos mr-0 p-0">
-                  <a href="#"><img src="./img/logo.png" alt="logo.png" class="logo"></a>
+                  <a href="#"><img src="./img/logo.png" alt="logo.png" class="logo" id="logoid"></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -33,22 +35,22 @@
                 <div class="collapse navbar-collapse justify-content-end me-5" id="navbarSupportedContent">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link active home" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active home" aria-current="page" id="id_home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" id="id_about">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Works</a>
+                      <a class="nav-link" id="id_works">Works</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Resume</a>
+                      <a class="nav-link" id="id_resume">Resume</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Skills</a>
+                      <a class="nav-link" id="id_skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Services</a>
+                      <a class="nav-link" id="id_contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -56,8 +58,9 @@
             </nav>
           </div>
       </header>
-      <div class="" id="sec1">
+      <div class="home" id="sec1">
         <div id="carouselExampleIndicators" class="carousel slide w-100 vh-100" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="overlay"></div>
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
@@ -69,7 +72,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active bg">
               <img src="./img/10.jpg" alt="bg.jpg">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-duration="3000">
                 <h3>Hi! I'm Vanic</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt blanditiis beatae a totam nobis dolore
                   recusandae molestias quae consequuntur molestiae? Laborum, nam eum. Nostrum quod eius rerum recusandae
@@ -163,6 +166,7 @@
     <div class="works" id="sec3">
       <div class="sec3-content ">
         <h3 class="h3-title">Some of my works</h3>
+        <div class="separator"></div>
         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Dolores vitae, odio aperiam debitis cum consectetur fugit corrupti quasi, 
         neque quam ab harum vel dignissimos alias ullam blanditiis! Consequuntur minus eos quis 
@@ -291,7 +295,7 @@
     </div>
     <div class="skill" id = "sec5">
       <div class="sec5-title">
-        <h3 class="h3-title">skill</h3>
+        <h3 class="h3-title">My skills</h3>
         <div class="separator"></div>
         <p class = "paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Accusantium, eaque quia voluptates ab laudantium asperiores distinctio 
@@ -356,7 +360,131 @@
         </div>
       </div>
     </div>
+    <div class="maxim" id="sec6">
+      <div class="sec6-title">
+        <h3 class="h3-title">Maxim</h3>
+        <div class="separator"></div>
+        <p class = "paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusantium, eaque quia voluptates ab laudantium asperiores distinctio 
+        repudiandae fuga facilis veritatis.</p>
+      </div>
+
+      <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="overlay"></div>
+          <div class="carousel-item active">
+            <div class="content-sec6">
+              <img src="./img/MarilynMonroe.jpg" alt="" class="author-img">
+              <p>I’m selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle.</br> But if you can’t handle me at my worst, then you sure as hell don’t deserve me at my best.</p>
+              <h4>- Marilyn Monroe -</h4>
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            <div class="content-sec6">
+              <img src="./img/Albert Einstein.jfif" alt="" class="author-img">
+              <p>Life is like riding a bicycle. To keep your balance, you must keep moving.</p>
+              <h4>- Albert Einstein -</h4>
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            <div class="content-sec6">
+              <img src="./img/J.K. Rowling.jpg" alt="" class="author-img">
+              <p>It does not do to dwell on dreams and forget to live.</p>
+              <h4>- J.K. Rowling, Harry Potter and the Sorcerer’s Stone -</h4>
+            </div>
+            
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExample"
+            data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExample"
+            data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+
+      </div>
+
+      <!-- <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex incidunt maxime minima optio neque. Aliquam esse, fuga et porro soluta officiis ut vero voluptatibus! Quasi adipisci voluptate dolorum rerum voluptates.
+      </div> -->
+
+    </div>
+    <div class= "contact" id="sec7">
+      <div class="sec7-title">
+        <h3 class="h3-title">Thanks for watching</h3>
+        <div class="separator"></div>
+        <p class = "paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusantium, eaque quia voluptates ab laudantium asperiores distinctio 
+        repudiandae fuga facilis veritatis.</p>
+        <h3 class="h3-title mt-5">Contact me</h3>
+        <div class="separator"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="https://www.facebook.com/huynguyenmkt" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://www.google.com/" target="_blank">
+              <i class="fab fa-google"></i>
+              <span>Google</span>
+            </a>
+          </div>
+          <div class="col-md-3" >
+            <a href="https://twitter.com/" target="_blank">
+              <i class="fab fa-twitter"></i>
+              <span>twitter</span>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://www.youtube.com/channel/UCJ6by6tbrsGNHmw0fxBKu1g" target="_blank">
+              <i class="fab fa-youtube"></i>
+              <span>Youtube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-height"></div>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="./img/my-picture.jpg" alt="" class="footer-img" id="imgfooter">
+          </div>
+          <div class="col-md-9">
+            <div class="content-footer">
+              <div class="name">Nguyen Ta Huy</div>
+              <div class="separator"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, a voluptates. 
+              Inventore beatae fugiat suscipit earum temporibus saepe hic enim ad tenetur, incidunt 
+              atque veritatis facere iste optio commodi sit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
   </div>
+<!-- end main -->
+  
   <script src="index.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
@@ -370,6 +498,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
