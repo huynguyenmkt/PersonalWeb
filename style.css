@@ -1,27 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     padding: 0;
     background: none !important;
     position: relative;
 }
-/* .content-holder{
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 100%;
-} */
-
+    
 .logo{
-    width:100px;
-    height: 100px;
+    width:80px;
+    height: 80px;
     /* background-color: gray; */
     border-radius: 50%;
 }
+
 .tr-header {
     position: fixed;
     background: rgba(189, 188, 188,0.3);
     border-bottom: 1px solid rgba(255,255,255,0.4);
+    transition: all 500ms linear;
     z-index: 22;
 }
+
 .menu-items li a{
     border-radius: 25px;
     padding: 10px 22px !important;
@@ -30,61 +33,75 @@ body{
     font-size: 13px;
     letter-spacing: 1px;
     color: #fff !important;
-    border: 2px solid rgba(255,255,255,0);
+    border: 2px solid rgba(70, 70, 70, 0);
     transition: all 200ms linear;
 }
+
 .menu-items li .home{
     border: 2px solid rgba(255,255,255,1);
 }
+
 .menu-items li a:hover{
     border: 2px solid rgba(255,255,255,1);
     background-color: white;
     color: #9ACFB7 !important;
 }
+
 .navbar-toggler-icon{
     color: white !important;
 }
-.sec1{
+
+#sec1{
     position: relative;
-    top: 0;
-    left: 0;
+    overflow: hidden;
 }
-.bg{
+
+.bg img{
     background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
+
 .fa-bars{
     color: rgba(231, 230, 230,60) !important;
 }
+
 .navbar-toggler{
     color: rgba(231, 230, 230,60) !important;
 }
+
 .carousel-caption {
-    top: 40%;
-    left: 50%;
+    top: 20%;
 }
+
 .carousel-caption h3{
     font-size: 64px;
     padding-bottom: 15px;
     /* text-transform: uppercase; */
     letter-spacing: 2px;
 }
+
 .about{
     display: inline-block;
     width: 100%;
 }
+
 .h3-title{
     font-size: 20px;
     color: #666;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
+    font-weight: bold;
     padding: 10px 0px;
 }
+
 .paragraph{
     color: #666;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
+
 .bg-parallax{
     position: relative;
     margin-top: 20px;
@@ -103,6 +120,7 @@ body{
     width: 100%;
     height: 100%;
 }
+
 .overlay{
     position: absolute;
     top: 0;
@@ -113,9 +131,11 @@ body{
     opacity: 0.6;
     z-index: 1;
 }
+
 .about-content .clf{
     position: relative;
 }
+
 .about-content .col-sm-3 i{
     position: absolute;
     color: rgba(204, 203, 203,0.6);
@@ -123,6 +143,7 @@ body{
     left: 40%;
     transition: 0.5s;
 }
+
 .about-content .col-sm-3 h4{
     position: absolute;
     color: white;
@@ -130,6 +151,7 @@ body{
     top: 25%;
     left: 35%;
 }
+
 .about-content .col-sm-3 p{
     color: #9ACFB7;
     font-size: 18px;
@@ -137,29 +159,178 @@ body{
     padding-bottom: 10px;
     padding-top: 120px;
 }
+
 .about-content .col-sm-3{
     border: 1px solid rgba(190, 190, 190,0);
     border-radius: 10px;
     z-index: 2;
 }
+
 .about-content .col-sm-3:hover{
     border: 1px solid rgba(255, 254, 254, 0.8);
     cursor: pointer;
 }
+
 .about-content .col-sm-3:hover .icon-about{
     font-size: 112px;
     transform: rotate(20deg);
 }
-.works{
+
+.sec3-content{
     padding-top: 5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.works .sec3-img{
+
+.works .h3-title{
+    text-align: center;
+}
+
+.works .paragraph{
+    text-align: center;
+}
+
+.container .resimg{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-.works .sec3-picture{
+
+.container .box-item-med{
     position: relative;
-    background-size: cover;
+    margin-top: 2rem;
+}
+
+.container .overlay-sec3{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background: #0c0c0c;
+    opacity: 0;
+    z-index: 1;
+    transition: all 300ms ease-out;
+}
+
+/* .container .overlay-sec3:hover{
+    opacity: .7;
+} */
+
+.container .workname{
+    position: absolute;
+    top: 43%;
+    left: 33%;
+    color: rgb(248, 255, 249);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    opacity: 0;
+    z-index: 2;
+}
+
+.container .box-item-med:hover .overlay-sec3{
+    opacity: .7;
+}
+
+.container .box-item-med:hover .workname{
+    opacity: 1;
+    cursor: pointer;
+    animation-name: worknameanimation;
+    animation-duration: 1s;
+}
+
+.separator {
+    width: 40px;
+    height: 2px;
+    margin: 10px auto 10px;
+    background: #ccc;
+    display: inline-table;
+}
+
+.resume .sec4-title{
+    margin-top: 5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.resume .sec4-title .h3-title{
+    text-align: center;
+}
+
+.accordion {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.accordion .card{
+    border: none;
+}
+
+.accordion .card .fas{
+    color: #9ACFB7;
+    font-size: 2rem;
+    padding-right: 10px;
+}
+
+.accordion .card span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #666;
+}
+
+.accordion .card-header{
+    border: none;
+    padding: 1.5rem 0 1.5rem 1rem;
+    border: 1px solid rgba(204, 203, 203,0);
+    border-bottom: 1px solid rgba(189, 188, 188,0.3);
+    transition: all 300ms linear;
+}
+
+.accordion .card-header:hover{
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgba(204, 203, 203,1);
+    padding-left: 2rem;
+}
+
+.skill .sec5-title{
+    margin-top: 5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.skill .sec5-title .h3-title{
+    text-align: center;
+}
+
+.skill .progressItem{
+    position: relative;
+}
+
+.skill .container{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.skill .container span{
+    color: #666;
+}
+
+.skill .container .progress{
+    margin: 10px 0;
+}
+
+.skill .container .progress-bar{
+    background-color: #9ACFB7;
+    transition: width 2s ease-out;
+}
+
+@keyframes worknameanimation{
+    from {top:90%; opacity:0.1 }
+    to {top:43%; opacity:1}
 }
